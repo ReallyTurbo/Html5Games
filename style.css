@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#0f1117;
+    color:white;
+}
+
+header{
+    height:70px;
+    background:#151924;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 30px;
+    border-bottom:1px solid #23293a;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+}
+
+#search{
+    width:300px;
+    padding:12px 16px;
+    border:none;
+    border-radius:12px;
+    background:#1e2535;
+    color:white;
+}
+
+.hero{
+    padding:80px 50px;
+    background:
+    linear-gradient(
+    135deg,
+    #006cff,
+    #00b3ff);
+}
+
+.hero h1{
+    font-size:52px;
+}
+
+.hero p{
+    margin-top:10px;
+    opacity:.9;
+}
+
+.games-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fill,minmax(300px,1fr));
+
+    gap:25px;
+    padding:40px;
+}
+
+.game-card{
+    text-decoration:none;
+    color:white;
+    background:#171d2b;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.25s;
+}
+
+.game-card:hover{
+    transform:translateY(-6px);
+}
+
+.game-card img{
+    width:100%;
+    display:block;
+}
+
+.game-card h3{
+    padding:18px;
+}
